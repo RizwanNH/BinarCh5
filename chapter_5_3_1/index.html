@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Challenge Chapter 4</title>
+    </head>
+</html>
+    <body>
+        <header>
+            <h3>Rock Paper Scissors</h3>
+            <img src='/Assets/assets/logo.png' id='headerimage1'>
+            <img src='/Assets/assets/logo 1.png' id='headerimage2'>
+        </header>
+        <div style="display: flex; justify-content: center;">
+            <button onclick="postScore()">SIMPAN SCORE</button>
+            <button onclick="getScore()">LIHAT SCORE TERSIMPAN</button>
+        </div>
+        <section class='game'>
+            <div class='score'>
+                <div class='player-score'>
+                    <h1>BUDI</h1>
+                    <span id='menang'>0<span>
+                </div>
+                <div class='computer-score'>
+                    <h2>COMPUTER</h2>
+                    <span id='kalah'>0<span>
+                </div>
+            </div>
+
+            <div class='intro'>
+                <button class='refresh' id='playagain' type="button" onclick="location.reload()"></button>
+                <h4>VS</h4>
+            </div>
+
+                <div class='player1'>
+                    <button class='rock-player1' id='r'></button>
+                    <button class='paper-player1' id='p'></button>
+                    <button class='scissor-player1' id='s'></button>
+                </div>
+
+                <div class='computer'>
+                    <button class='rock-computer' id='rcom' ></button>
+                    <button class='paper-computer' id='pcom'></button>
+                    <button class='scissor-computer' id='scom'></button>
+                </div>
+            </div>
+
+            <div class='result'>
+                <p id='hasil'></p>
+            </div>
+            
+        </section>
+        
+        <script src='app.js'></script>
+    </body>

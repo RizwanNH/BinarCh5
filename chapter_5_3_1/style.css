@@ -1,0 +1,267 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0;
+    top: 0;
+    background-color: #9C835F;
+    font-family: sans-serif;
+}
+
+.player-score {
+    position: absolute;
+    width: 299px;
+    height: 94px;
+    left: 296px;
+    top: 162px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.computer-score {
+    position: absolute;
+    width: 299px;
+    height: 94px;
+    left: 865px;
+    top: 162px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+h3 {
+    position: absolute;
+    width: 410px;
+    height: 62px;
+    left: 218px;
+    top: 40px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: #F9B23D;
+}
+
+h4{
+    position: absolute;
+    width: 296px;
+    height: 186px;
+    left: 589px;
+    top: 419px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 144px;
+    line-height: 196px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #BD0000;
+}
+
+#headerimage1 {
+    position: absolute;
+    width: 55px;
+    height: 87px;
+    left: 37px;
+    top: 12px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 98px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #724C21;
+}
+
+#headerimage2 {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 119px;
+    top: 27px;
+}
+
+.refresh{
+    position: absolute;
+    width: 77px;
+    height: 71px;
+    left: 681px;
+    top: 843px;
+    text-align: center;
+    background: url(/Assets/assets/refresh.png);
+    background-size: cover;
+    display: block;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+button:hover {background-color: #bcbebc}
+button:active {
+  background-color: #727272;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.rock-player1 {
+    position: absolute;
+    left: 382px;
+    top: 267px;
+    right: 930px;
+    bottom: 665px;
+    width: 128px;
+    height: 92px;
+    background: url(/Assets/assets/batu.png);
+    background-size: cover;
+    display: block;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+.paper-player1 {
+    position: absolute;
+    left: 388px;
+    top: 440px;
+    right: 937px;
+    bottom: 434px;
+    text-align: center;
+    width: 115px;
+    height: 150px;
+    background: url(/Assets/assets/kertas.png);
+    background-size: cover;
+    display: block;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+.scissor-player1 {
+    position: absolute;
+    left: 369px;
+    top: 671px;
+    right: 937px;
+    bottom: 193px;
+    text-align: center;
+    width: 134px;
+    height: 160px;
+    background: url(/Assets/assets/gunting.png);
+    background-size: cover;
+    display: block;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+.rock-computer {
+    position: absolute;
+    left: 951px;
+    top: 267px;
+    right: 361px;
+    bottom: 665px;
+    width: 128px;
+    height: 92px;
+    background: url(/Assets/assets/batu.png);
+    background-size: cover;
+    display: block;
+    border: none;
+    cursor: not-allowed;
+    text-decoration: none;
+    outline: none;
+}
+.paper-computer {
+    position: absolute;
+    left: 970px;
+    top: 440px;
+    right: 355px;
+    bottom: 434px;
+    text-align: center;
+    width: 115px;
+    height: 150px;
+    background: url(/Assets/assets/kertas.png);
+    background-size: cover;
+    display: block;
+    border: none;
+    cursor: not-allowed;
+    text-decoration: none;
+    outline: none;
+}
+
+.scissor-computer {
+    position: absolute;
+    left: 951px;
+    top: 671px;
+    margin-right: 355px;
+    bottom: 193px;
+    text-align: center;
+    width: 134px;
+    height: 160px;
+    background: url(/Assets/assets/gunting.png);
+    background-size: cover;
+    display: block;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    cursor: not-allowed;
+}
+
+.result {
+    position: absolute;
+    width: 271.11px;
+    height: 170px;
+    left: 600px;
+    top: 420px;
+    background: #4C9654;
+    border-radius: 10px;
+    transform: rotate(-28.87deg);
+    visibility: hidden;
+}
+#hasil {
+    width: 296px;
+    height: 186px;
+    left: 568px;
+    top: 525.37px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    visibility: hidden;
+    background: #4C9654;
+}
+
+.grey {
+        background-color: #727272;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+}
